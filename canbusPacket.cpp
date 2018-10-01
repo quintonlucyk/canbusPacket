@@ -22,3 +22,7 @@ uint32_t canbusPacket::getData() {
 uint32_t canbusPacket::getDataType() {
 	return m_data_type;
 }
+
+uint64_t canbusPacket::getPacket() {
+	uint64_t sixty_four_bit_packet = (uint64_t)m_data_type << 32 | m_data;
+}

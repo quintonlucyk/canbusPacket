@@ -13,6 +13,7 @@ namespace wlp {
         void changeDataType(uint32_t new_data_type);
         uint32_t getData();
         uint32_t getDataType();
+        uint64_t getPacket();
 
     private:
         uint32_t m_data;
