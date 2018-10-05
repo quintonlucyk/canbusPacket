@@ -9,6 +9,7 @@ namespace wlp {
     class canbusPacket {
     public:
         explicit canbusPacket(float data,uint32_t data_type);
+        explicit canbusPacket(uint64_t packet);
         void changeData(float new_data);
         void changeDataType(uint32_t new_data_type);
         uint32_t getData();
